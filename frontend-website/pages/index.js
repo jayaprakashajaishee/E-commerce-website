@@ -1,17 +1,8 @@
 import Head from 'next/head'
-import ProductCard from '../src/components/ProductCard/ProductCard'
+import ProductsGrid from '../src/components/ProductsGrid/ProductsGrid'
 
-const data = {
-  title: "Brown eggs",
-  type: "dairy",
-  description: "Raw organic brown eggs in a basket",
-  filename: "https://api4286.s3.ap-south-1.amazonaws.com/images/0.jpg",
-  height: 600,
-  width: 400,
-  price: 28.1,
-  rating: 4,
-  id: "p-0",
-};
+
+
 
 
 export default function Home() {
@@ -24,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div><ProductCard data={data}/></div>
+        <div><ProductsGrid /></div>
       </main>
     </div>
   )
